@@ -1,5 +1,5 @@
 /* =============================================================
- * bootstrap-scrollspy.js v2.1.1
+ * bootstrap-scrollspy.js v2.2.1
  * http://twitter.github.com/bootstrap/javascript.html#scrollspy
  * =============================================================
  * Copyright 2012 Twitter, Inc.
@@ -56,7 +56,7 @@
           .map(function () {
             var $el = $(this)
               , href = $el.data('target') || $el.attr('href')
-              , $href = /#\w/.test(href) && $("#" + href.split("#")[1])
+              , $href = /^#\w/.test(href) && $(href)
             return ( $href
               && $href.length
               && [[ $href.position().top, href ]] ) || null
