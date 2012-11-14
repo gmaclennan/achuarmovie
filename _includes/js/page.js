@@ -25,7 +25,6 @@
   var Page = window.Page = {};
   
   Page.init = function() {
-    setupScrollto("chumpi");
     for(var i = 0, len = sections.length; i < len; ++i) {
       loadSection(sections[i]);
     }
