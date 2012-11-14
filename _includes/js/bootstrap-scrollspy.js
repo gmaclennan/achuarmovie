@@ -56,7 +56,7 @@
           .map(function () {
             var $el = $(this)
               , href = $el.data('target') || $el.attr('href')
-              , $href = /^#\w/.test(href) && $(href)
+              , $href = /#\w/.test(href) && $("#" + href.split("#")[1]) // modification to original Bootstrap code!
             return ( $href
               && $href.length
               && [[ $href.position().top, href ]] ) || null
@@ -76,12 +76,11 @@
           , targets = this.targets
           , activeTarget = this.activeTarget
           , i
-
+        
         if (scrollTop >= maxScroll) {
           return activeTarget != (i = targets.last()[0])
             && this.activate ( i )
         }
-
         for (i = offsets.length; i--;) {
           activeTarget != targets[i]
             && scrollTop >= offsets[i]
@@ -95,7 +94,7 @@
           , selector
 
         this.activeTarget = target
-
+        
         $(this.selector)
           .parent('.active')
           .removeClass('active')
