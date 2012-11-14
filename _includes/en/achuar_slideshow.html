@@ -1,0 +1,16 @@
+<div id="slideshow" class="carousel slide">
+  <div class="carousel-inner">
+    {% for post in site.posts reversed %}
+    {% if post.categories contains 'en' and post.categories contains 'slideshow' %}
+    <div class="item{% if forloop.first %} active{% endif %}">
+      <img alt="{{ post.alt_text }}" src="{{ post.image_url }}">
+      <div class="carousel-caption">
+        {{ post.content | markdownify }}
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div><!-- Carousel nav -->
+  <a class="carousel-control left" href="#slideshow" data-slide="prev">‹</a> <a class="carousel-control right" href="#slideshow" data-slide="next">›</a>
+</div>
+

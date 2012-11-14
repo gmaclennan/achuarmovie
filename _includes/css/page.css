@@ -1,0 +1,305 @@
+/* ------------------------------------------- */
+/* Container for text on site
+/* ------------------------------------------- */
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 0 90px;
+  display: block;
+}
+
+/* ------------------------------------------- */
+/* Navigation bar
+/* ------------------------------------------- */
+
+.topbar {
+  background: #141414;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  overflow: visible;
+}
+
+.topbar .container {
+	padding: 0;
+	left: -50%;
+	position: relative;
+	float: right;
+	width: auto;
+}
+
+.topbar ul.nav {
+  float: left;
+  display: block;
+  margin: 8px 0;
+  position: relative;
+  padding: 0;
+  left: 50%;
+}
+
+.topbar ul.nav > li {
+  float: left;
+  list-style-image: url("../images/embed/bullet.png");
+  margin-left: 40px;
+  padding-left: 20px;
+  font-family: "Montserrat", "Helvetica Neue", "Helvetica", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.topbar ul.nav a {
+  color: #bfbfbf;
+  display: block;
+  padding: 8px 10px;
+  line-height: 19px;
+  text-decoration: none;
+}
+
+.topbar ul.nav a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.topbar ul.nav > li:first-child {
+  display: block;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.topbar ul.nav .active > a, ul.nav a:active {
+  background-color: #373737;
+  color: #ffffff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.topbar ul.nav .highlight > a {
+  background-color: #9d261d;
+  color: #ffffff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+
+
+/* ------------------------------------------- */
+/* Page sections
+/* ------------------------------------------- */
+
+section {
+  background: no-repeat scroll bottom center;
+}
+
+#chumpi {
+  background-color: #c2cd7c;
+  background-image: url("../images/background-1.png");
+  padding-bottom: 300px;
+  padding-top: 10px;
+  position: relative;
+  bottom: -50px;
+}
+
+#achuar {
+  background-color: #9ecdcf;
+  background-image: url("../images/background-2.png");
+  padding-top: 70px;
+  padding-bottom: 400px;
+}
+  
+#territory {
+  background-color: #afada3;
+  background-image: url("../images/background-3.png");
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+  
+#oil {
+  padding-top: 70px;
+  background: #494743;
+  padding-bottom: 50px;
+}
+  
+#oil p {
+  color: #ccc;
+}
+  
+#action {
+  background: #c2cd7c url("../images/embed/pajaros-2.png") no-repeat 50% 55px;
+  padding: 70px 0 50px;
+}
+  
+/* ------------------------------------------- */
+/* Footer
+/* ------------------------------------------- */
+  
+footer {
+  background: #141414;
+  padding-top: 25px;
+  color: #aaa;
+  min-height: 300px;
+}
+footer p {
+  margin: 10px 0;
+}
+footer a {
+  color: #ccc;
+}
+footer ul {
+  margin: 0 0 0 -20px;
+  padding: 0;
+}
+footer li {
+  list-style-type: none;
+  width: 185px;
+  float: left;
+  margin: 0 0 0 20px;
+}
+  
+/* ------------------------------------------- */
+/* Chumpi section special formatting
+/* ------------------------------------------- */
+
+.birds {
+  background: url("../images/embed/pajaros.png") no-repeat scroll 90% 100%;
+  width: 880px;
+  margin-top: -30px;
+}
+
+.birds blockquote {
+  display: block;
+  width: 550px;
+  padding: 70px 250px 70px 0px;
+  margin: 0;
+}
+
+.video {
+  width: 802px;
+  height: 450px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.video iframe {
+  border: 1px solid white;
+  background: #000 url("../images/chumpi-cropped.jpg") no-repeat center;
+}
+
+a.play {
+  position: absolute;
+  display: block;
+  width: 800px;
+  height: 430px;
+  margin: 1;
+  background: url("../images/embed/play-button.png") no-repeat 50% -86px;
+  font-size: 54px;
+  padding: 10px;
+  line-height: 1em;
+  text-indent: -2000px;
+}
+
+a.play:hover {
+  background-position: 50% 182px;
+  cursor: pointer;
+}
+
+/* Shows while video iframe is loading */
+
+iframe.loading {
+  background-image: url("../images/loading.gif");
+}
+
+/* ------------------------------------------- */
+/* Achuar section special formatting
+/* ------------------------------------------- */
+
+.three-images {
+  width: 822px;
+  margin-left: -22px;
+}
+.three-images img {
+  float: left;
+  margin: 0 0 0 22px;
+}
+
+#achuar blockquote, #achuar cite {
+  font-family: 'Nothing You Could Do', cursive;
+  display: block;
+  text-align: center;
+  margin: 23px 0;
+}
+
+/* ------------------------------------------- */
+/* Territory section special formatting
+/* ------------------------------------------- */
+
+img.map {
+  margin: 0 auto 30px auto;
+  display: block;
+}
+
+#map-container {
+  position: relative;
+  height: 450px;
+  z-index: 4;
+  margin-bottom: 23px;
+}
+#map {
+  height: 450px;
+  background-color: white;
+}
+#map img, footer img {
+  border: 0;
+}
+
+/* ------------------------------------------- */
+/* Get Involved section special formatting
+/* ------------------------------------------- */
+
+#action ol {
+	counter-reset: li; /* Initiate a counter */
+	list-style: none; /* Remove default numbering */
+	*list-style: decimal; /* Keep using default numbering for IE6/7 */
+  padding: 0;
+}
+
+#action ol li {
+  margin-left: 0.5em;
+}
+
+#action li p {
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0.75em 0;
+  color: #333;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#action li > p:first-child:before {
+	content: counter(li);
+	counter-increment: li;
+  font-family: "Montserrat", "Helvetica", "Sans-Serif";
+  font-weight: 400;
+  font-size: 30px;
+	background: #c2cd7c;
+  color: #fff;
+	height: 1.3em;
+	width: 1.3em;
+	line-height: 1.3em;
+	text-align: center;
+  border: .15em solid #fff;
+	border-radius: 1.5em;
+	display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+

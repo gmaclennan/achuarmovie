@@ -1,0 +1,61 @@
+/* ------------------------------------------- */
+/* Share icons
+/* ------------------------------------------- */
+
+.share {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  margin-left: -490px;
+  width: 58px;
+  z-index: 1;
+}
+
+.share-this {
+  margin: 0 0 -122px;
+  position: relative;
+  top: 150px;
+  left: -60px;
+  height: 122px;
+  width: 134px;
+  background: url("../images/share-this.png") no-repeat scroll left bottom;
+  text-indent: -2000px;
+  z-index: 2;
+}
+
+.share ul {
+  margin: 0;
+  padding: 0;
+
+}
+  
+.share li {
+  display: block;
+  width: 58px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.share a {
+  display: block;
+  margin:0;
+  padding:0;
+  width: 58px;
+  height: 61px;
+  text-indent: -2000px;
+  cursor: pointer;
+  background: url("../images/embed/share-buttons.png") no-repeat;
+  z-index: 2;
+  position: relative;
+}
+
+.share a.twitter { background-position: 0px 0px; }
+.share a.facebook { background-position: 0px -61px; }
+.share a.email { background-position: 0px -122px; }
+
+.share a.twitter:hover {background-position: -58px 0px; }
+.share a.facebook:hover {background-position: -58px -61px; }
+.share a.email:hover {background-position: -58px -122px; }
+
+

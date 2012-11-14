@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<section id="chumpi">
+  <div class="container">
+    <h1>{{page.title}}</h1>
+    <div class="birds">
+      <blockquote>&ldquo;{{ page.quote }}&rdquo;</blockquote>
+    </div>
+    <div class="video">
+      <a href="https://player.vimeo.com/video/35462613?byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=1" target="video_iframe" class=play>Click to play the movie</a>
+      <iframe id="video_iframe" width="800" height="450" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    </div>
+    {{content}}
+  </div>
+</section>
+<section>{{ site.categories }}</section>
+<section id="achuar"></section>
+<section id="territory"></section>
+<section id="oil"></section>
+<section id="action"></section>

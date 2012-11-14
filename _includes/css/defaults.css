@@ -1,0 +1,123 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow-y: scroll;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* for non-HTML5 browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+
+/* ------------------------------------------- */
+/* Set up some defaults
+/* ------------------------------------------- */
+
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 1px solid white;  
+}
+img.float-right {
+  float: right;
+  margin: 0 0 45px 45px;
+}
+body {
+  background-color: #c2cd7c;
+  font-family: "Arial", sans-serif;
+  font-size: 15.5px;
+  font-weight: normal;
+  line-height: 1.5em;
+  color: #333;
+}
+h1,h2,h3, a.play {
+  font-family: "Montserrat", "Helvetica", "Sans-Serif";
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  margin-top: 0;
+}
+h1 {
+  font-size: 55px;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 36px;
+  margin-bottom: 1.5em;
+}
+p {
+  margin-bottom: 23px;
+}
+hr {
+  border: 0;
+  margin: 5em auto;
+  width: 100%;
+  height: 14px;
+  background: url("../images/hr.png") no-repeat center center;
+}
+blockquote {
+  font-size: 40px;
+  font-family: Georgia;
+  font-color: #4f4f4f;
+  line-height: 1.2em;      
+}
+cite {
+  font-size: 24px;
+  line-height: 1.2em;
+}
+
+
+/* ------------------------------------------- */
+/* Clear fix
+/* ------------------------------------------- */
+
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+
+
+.alpha60 {
+/* Fallback for web browsers that doesn't support RGBa */
+background: rgb(0, 0, 0) transparent;
+/* RGBa with 0.6 opacity */
+background: rgba(0, 0, 0, 0.6);
+/* For IE 5.5 - 7*/
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+/* For IE 8*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}

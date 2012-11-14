@@ -1,0 +1,13 @@
+compress_assets: off
+gzip_assets: off
+embed_assets: datauri
+
+javascripts:
+  page:
+    - app/assets/javascripts/bootstrap-scrollspy.js
+    - app/assets/javascripts/bootstrap-carousel.js
+    - app/assets/javascripts/page-interaction.js
+  maps:
+    - app/assets/javascripts/modestmaps.min.js
+    - app/assets/javascripts/wax.mm.js
+    - app/assets/javascripts/page-map.js
