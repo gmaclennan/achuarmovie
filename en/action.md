@@ -2,11 +2,12 @@
 layout: action
 title: Get Involved
 lang: en
+published: true
 ---
 
 ## Get Involved
 
-The Achuar made this film because they want the world to know why their rainforest home is so special to them, and they want your help to stop the advance of oil drilling that would destroy their way of life.
+The Achuar made this film because they want the world to know why their rainforest home is so special to them, and they want your help to stop the advance of oil drilling that would completely destroy their way of life.
 
 You can help them spread the word and prove that a future without the oil company is possible.
 
